@@ -1,0 +1,22 @@
+.homepage-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: calc(100vh - 60px); /* высота экрана минус высота заголовка */
+    background-color: #f2f2f2;
+}
+
+.text-container {
+    font-size: 28px;
+    color: #333;
+    margin-right: 50px;
+}
+
+.image-container {
+
+}
+.image-container img {
+    max-width: 600px; /* Уменьшить максимальную ширину логотипа */
+    max-height: 600px; /* Уменьшить максимальную высоту логотипа */
+
+}

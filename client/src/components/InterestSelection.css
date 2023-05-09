@@ -1,0 +1,63 @@
+.interest-selection {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.interests-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+    max-width: 500px;
+}
+
+.interest-item {
+    background-color: #f0f0f0;
+    padding: 10px;
+    border-radius: 5px;
+    text-align: center;
+    cursor: pointer;
+}
+
+.interest-item.selected {
+    background-color: #6495ed;
+    color: #fff;
+}
+
+.gender-selection {
+    display: flex;
+    justify-content: space-between;
+    max-width: 250px;
+}
+
+.gender-item {
+    background-color: #f0f0f0;
+    padding: 10px;
+    border-radius: 5px;
+    text-align: center;
+    cursor: pointer;
+    width: 100px;
+}
+
+.gender-item.selected {
+    background-color: #6495ed;
+    color: #fff;
+}
+
+.birthdate-selection {
+    display: flex;
+    justify-content: space-between;
+    max-width: 250px;
+}
+.form-container {
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 20px;
+    max-width: 500px;
+    margin: 0 auto;
+}
+.user-info-form label {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 10px;
+}

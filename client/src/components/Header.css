@@ -1,0 +1,59 @@
+.header {
+    background-color: #ffffff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    position: sticky;
+    top: 0;
+    width: 100%;
+    height: 75px;
+    z-index: 100;
+}
+
+.header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    height: 100%;
+    padding: 0 15px; /* Убрать верхний и нижний отступы */
+}
+
+.logo {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    font-size: 24px;
+    display: flex;
+    align-items: center;
+}
+
+.logo img {
+    max-width: 40%; /* Уменьшить максимальную ширину логотипа */
+    max-height: 40%; /* Уменьшить максимальную высоту логотипа */
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.nav {
+    display: flex;
+    gap: 15px;
+    align-items: center; /* Выравнивает элементы по вертикали */
+    background-color: #ffffff;
+}
+
+.login-btn,
+.register-btn {
+    text-decoration: none;
+    color: black;
+    background-color: #f2f2f2;
+    padding: 5px 10px; /* Уменьшите отступы для кнопок */
+    border-radius: 20px;
+    border: 1px solid white;
+    transition: background-color 0.3s ease;
+    font-size: 14px;
+}
+
+.login-btn:hover,
+.register-btn:hover {
+    background-color: rgb(208, 208, 208);
+}

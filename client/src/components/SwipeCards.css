@@ -1,0 +1,26 @@
+/* src/components/SwipeCards.css */
+.swipeCards {
+    display: flex;
+    justify-content: center;
+    margin-top: 100px;
+}
+
+.swipe {
+    position: absolute;
+}
+
+.card {
+    background-color: white;
+    background-size: cover;
+    background-position: center;
+    width: 300px;
+    height: 400px;
+    border-radius: 10px;
+    box-shadow: 0px 10px 25px rgba(0, 0, 0, 0.15);
+    display: flex;
+    justify-content: flex-end;
+    flex-direction: column;
+    padding: 20px;
+    font-size: 20px;
+    color: white;
+}
