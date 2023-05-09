@@ -4,7 +4,7 @@ import axiosInstance from '../utils/axiosInstance';
 import jwtDecode from 'jwt-decode';
 import axios from 'axios';
 const instance = axios.create({
-    baseURL: 'http://localhost:3000/api',
+    baseURL: 'http://localhost:3001/api',
 });
 instance.interceptors.request.use((config) => {
     // Получение токена из localStorage (или из другого места, где вы храните токен)
@@ -58,7 +58,7 @@ async function fetchUsers(interests) {
 }
 
 async function uploadAvatar(avatarFile) {
-    const apiUrl = 'http://localhost:3000/api'; // Добавьте определение apiUrl
+    const apiUrl = 'http://localhost:3001/api'; // Исправлено определение apiUrl
     const formData = new FormData();
     formData.append("avatar", avatarFile);
 
@@ -113,7 +113,6 @@ const updateUser = async (birthdate, avatar, name, gender, occupation) => {
     }
 };
 
-
-
 const getStartups = () => instance.get('/startup'); // Замените 'api' на 'instance'
 export { saveInterests, updateUser, getStartups, uploadAvatar };
+
